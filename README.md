@@ -1,1 +1,22 @@
-# zsh
+# settings for  zsh
+
+clone the repo in ~/.config/zsh directory
+
+create a symlink to ~/.config/zsh directory/.zshrc in ~/.zshrc
+
+configure ~/.zshenv with following variables
+
+```
+rt XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+export EDITOR="vim"
+export VISUAL="vim"
+
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
+export HISTSIZE=10000                   # Maximum events for internal history
+export SAVEHIST=10000                   # Maximum events in history file
+```
